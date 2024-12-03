@@ -1,0 +1,13 @@
+body {
+    font-family: $font-family-base;
+    color: $primary-color;
+    background-color: $white;
+  }
+
+  h1 {
+    color: $secondary-color;
+  }
+
+  h2, h3 {
+    $primary-color: darken($secondary-color, 10%)
+  }

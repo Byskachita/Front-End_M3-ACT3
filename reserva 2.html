@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital</title>
+
+  <!--HOJAS DE ESTILO-->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__logo">
+        <a href="index.html">
+            <img src="assets/img/Divem---Logo-02.png" alt="">
+        </a>
+
+    <nav class="navbar ms-md-auto">
+      <a href="home.html" class="navbar__item">Home</a>
+      <a href="services.html" class="navbar__item">Services</a>
+      <a href="contact.html" class="navbar__item">About</a>
+      <button type="button" class="button" href="reserva.html" role="button">reservas</a>
+    </nav>
+
+    </div>
+
+  </header>
+
+<!-----------------------------------------------FORMULARIO DE RESERVAS-------------------------------->
+ 
+<main class="formulario-reservas pt-5">
+  <div class="pt-5">
+    <section class="container-form p-5 mx-5">
+      <form id="hospitalForm" class="needs-validation" novalidate>
+        <h1 class="form__title">Reserva de horas</h1>
+        
+        <div class="form__group">
+          <label for="name" class="form__label">Nombre:</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+          <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+        </div>
+        
+        <div class="form__group">
+          <label for="age" class="form__label">Edad:</label>
+          <input type="number" id="age" name="age" class="form-control" required>
+          <div class="invalid-feedback">Por favor, ingrese su edad.</div>
+        </div>
+        
+        <div class="form__group">
+          <label for="email" class="form__label">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+          <div class="invalid-feedback">Por favor, ingrese un correo electrónico.</div>
+        </div>
+        
+        <div class="form__group">
+          <label for="selectMedicalCenter" class="form__label">Seleccione Centro Médico:</label>
+          <select id="selectMedicalCenter" class="form-select" required>
+            <option value="" selected>Seleccionar</option>
+          </select>
+          <div class="invalid-feedback">Por favor, seleccione un Centro Médico.</div>
+        </div>
+        
+        <div class="form__group">
+          <label for="selectSpecialty" class="form__label">Seleccione Especialidad:</label>
+          <select id="selectSpecialty" class="form-select" required>
+            <option value="" selected>Seleccionar</option>
+          </select>
+          <div class="invalid-feedback">Por favor, seleccione una Especialidad.</div>
+        </div>
+        
+        <div class="form__group">
+          <label for="selectDoctor" class="form__label">Seleccione Doctor:</label>
+          <select id="selectDoctor" class="form-select" required>
+            <option value="" selected>Seleccionar</option>
+          </select>
+          <div class="invalid-feedback">Por favor, seleccione un Doctor.</div>
+        </div>
+        
+        <button type="submit" class="form__button">Enviar</button>
+        <div id="formFeedback" class="feedback-message"></div>
+      </form>
+    </section>
+  </div>
+</main>
+
+
+<!--------------------------------------------------FOOTER------------------------------------------>
+
+<footer class="footer">
+
+    <div class="grupo__uno">
+  
+        <div class="box">
+          <figure>
+            <a href="/">
+              <img src="assets/img/Divem---Logo-02.png" alt="Logo Divem">
+            </a>
+          </figure>
+        </div>  
+  
+        
+        <div class="box ps-5">
+          <h3 class="text-uppercase">Contáctanos</h3>
+          <div class="icon_section">
+            <img src="assets/img/telephone-fillB.png" alt="Llamanos">
+            <div class="text_container text-white">
+              <h4 class="m-2">
+                2 2222 2222
+              </h4>
+            </div> 
+          </div>   
+      
+        <div class="icon__section">
+            <img src="assets/img/geo-alt-fillB.png" alt="Nuestra Ubicación">
+            <div class="text_container text-white">
+              <h4 class="m-2">Av. Libertador #1234 Providencia <br>Santiago RM - Chile</h4>
+            </div> 
+        </div>  
+      </div>
+  
+        <div class="box ps-5">
+  
+          <div class="menu">
+            <h3>MENÚ</h3>
+            <ul class="text_container">
+              <li>Inicio</li>
+              <li>Nosotros</li>
+              <li>Contacto</li>
+            </ul> 
+          </div>
+  
+            <div class="icon_rrss text-white">
+              <h3>SIGUENOS</h3>
+          
+              <div class="red-social ps-4">
+                <a href="/" class="bi-facebook m-1" alt="logo facebook" target="_blank" rel="noopener">
+                  <img src="assets/img/facebook.svg" class="grupo__uno__social alt="">
+                </a>
+                <a href="/" class="bi-instagram m-2" alt="logo instagram" target="_blank" rel="noopener">
+                  <img src="assets/img/instagram.svg" class="grupo__uno__social" alt="">
+                </a>
+                <a href="/" rel="noopener" target="_blank" class="bi-whatsapp m-1" alt="logo whatsapp">
+                  <img src="assets/img/whatsapp.svg" class="grupo__uno__social" alt="">
+                </a>
+              </div>
+     
+            </div>
+     
+          </div>
+    
+    </div>
+  
+    <div class="grupo__dos">
+      <small>&copy; 2024 <b>Divem - Hospital Nacional</b> - Designed by Denisse Rossel N.</small>
+    </div>
+  
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/reservas.js"></script>
+
+</body>
+</html>

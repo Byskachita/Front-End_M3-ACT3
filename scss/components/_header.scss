@@ -1,0 +1,29 @@
+//Estilos del header
+
+.navbar {
+    background-color: darken($primary-color, 10%);
+    width: 100%;
+    height: 160px;
+    padding: 1rem;
+    position: fixed;
+    padding-bottom: 100px;
+
+    &__logo img{
+      width: 150px;
+      height: auto;
+    }
+  
+    .navbar {
+      display: flex;
+      z-index: 1000;
+ 
+      &__item {
+        margin-right: 1rem;
+        color: $white;
+  
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }

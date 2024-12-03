@@ -1,0 +1,27 @@
+//Variables globales
+
+//Puntos de quiebre mediaqueries
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1200px;
+
+//Colores principales
+$primary-color: #227c9d;
+$secondary-color: #fef9ef;
+$accent-color: #17c352;
+
+//variante de colores principales
+$primary-color: darken($primary-color, 10%);
+$accent-color: darken($accent-color, 10%);
+
+//Colores neutros
+$white: #ffffff;
+$black: #000000;
+
+//Colores de advertencia y cambios
+$warning-color: #fe6d73;
+$hover-color: #ffcb77;
+
+
+$font-family-base: 'Poppins', sans-serif;

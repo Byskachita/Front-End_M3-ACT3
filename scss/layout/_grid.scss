@@ -1,0 +1,23 @@
+// Clase principal de grilla
+.grid {
+    display: grid;
+    gap: 16px; // Espaciado entre los elementos
+  }
+  
+  // Configuración de columnas responsivas
+  .grid {
+    grid-template-columns: 1fr; // Una columna para pantallas pequeñas
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(1, 1fr); // Dos columnas en pantallas medianas
+    }
+ 
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr); // Tres columnas en pantallas grandes
+    }
+  }
+  
+  // Clases de columnas específicas para spans personalizados
+  .col-1 { grid-column: span 1; }
+  .col-2 { grid-column: span 2; }
+  .col-3 { grid-column: span 3; }
